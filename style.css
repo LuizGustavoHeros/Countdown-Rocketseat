@@ -1,13 +1,6 @@
-:root {
-  --black: #4D4C59;
-  --purple: #6C63FF;
-	--light-grey: #C8C8C8;
-  --text-color: #9C9AB6;
-}
-
 body {
-  height: 100%;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -15,38 +8,125 @@ body {
 
   position: relative;
 
-};
-
-.rocket {
-  height: 198px;
-  display: block;
-  margin-right: auto ;
-  margin-left: auto;
+  overflow: hidden;
 }
 
-.botao {
-  height: 60px;
-  width: 160px;
-  display: block;
-  margin-right: auto ;
-  margin-left: auto;
-  margin-top: 17px;
+.container {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.container .countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container .countdown header h1 {
   font-size: 2.25rem;
   font-weight: 500;
-  
-  text-transform: uppercase;
   color: var(--purple);
-  
+
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.countdown .countdown-time {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.countdown .countdown-time .countdown-time-item {
+  margin-top: 1.18rem;
+  text-align: center;
+}
+
+.countdown-time .countdown-time-item .countdown-time-item-text {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.countdown-time .countdown-time-item .countdown-time-item-number {
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.container .countdown footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.container .countdown footer span {
+  display: block;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.container .countdown footer button {
+  margin-top: 2rem;
+
+  border: 2px solid var(--purple);
+  border-radius: 10px;
+
+  padding: 1rem 4rem;
+  background: var(--purple);
+
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 
+.top-image {
+  width: 100%;
 
-.container {
-  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
+.bottom-image {
+  width: 100%;
 
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .container .countdown header h1 {
+    font-size: 1.5rem;
+  }
+
+  .container .rocket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .rocket img {
+    width: 90%;
+  }
+}
 

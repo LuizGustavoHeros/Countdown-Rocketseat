@@ -3,7 +3,7 @@ const hoursText = document.querySelector('#hours')
 const minutesText = document.querySelector('#minutes')
 const secondsText = document.querySelector('#seconds')
 
-const newYearDate = new Date('1 Jan 2024')
+const newYearDate = new Date('1 mar 2023')
 
 setInterval(() => {
   const currentDate = new Date()

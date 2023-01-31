@@ -3,18 +3,25 @@
 
 <head>
   <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <meta name="viewport" content="width=device-width">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet" />
+  <link href="global.css" rel="stylesheet" />
+
   <title>Countdown</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@300;400;500&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <div class="countdown">
       <header>
-        <h1>READ TO LAUNCH IN...</h1>
+        <h1>Será lançado em...</h1>
       </header>
 
       <div class="countdown-time">
@@ -34,19 +41,23 @@
           <p class="countdown-time-item-text">Segundos</p>
           <p class="countdown-time-item-number" id="seconds">00</p>
         </div>
+
       </div>
+
+      <footer>
+        <span></span>
+        <button>Inscreva-se</button>
+
+      </footer>
+
+
     </div>
 
-    <main>
-      <img class="rocket" src="./assets/images/rocket.svg">
-      <button class="botao">
-        inscreva-se
-      </button>
-    </main>
-    <footer>
-      
-    </footer>
-    <script src="script.js"></script>
+    <div class="rocket">
+      <img src="./assets/images/rocket.svg">
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
