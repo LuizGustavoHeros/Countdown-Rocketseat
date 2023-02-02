@@ -53,7 +53,7 @@ body {
 .countdown-time .countdown-time-item .countdown-time-item-text {
   font-size: 0.875rem;
   font-weight: 300;
-  color: var(--text-color);
+  color: var(--black);
 }
 
 .countdown-time .countdown-time-item .countdown-time-item-number {
@@ -72,7 +72,7 @@ body {
 
   font-size: 0.875rem;
   font-weight: 400;
-  color: var(--text-color);
+  color: var(--black);
 }
 
 .container .countdown footer button {
@@ -129,4 +129,6 @@ body {
     width: 90%;
   }
 }
+
+
 
